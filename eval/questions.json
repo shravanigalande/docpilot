@@ -1,0 +1,16 @@
+[
+  {"question": "How do I install restic on Ubuntu?", "expected": ["tasks/install-restic.md"]},
+  {"question": "How do I create a new repository?", "expected": ["tasks/create-repository.md"]},
+  {"question": "How do I back up a directory?", "expected": ["tasks/back-up-files.md"]},
+  {"question": "How do I exclude files from a backup?", "expected": ["tasks/back-up-files.md", "reference/restic-commands.md"]},
+  {"question": "How do I restore the latest snapshot?", "expected": ["tasks/restore-snapshot.md"]},
+  {"question": "How do I delete old snapshots and free space?", "expected": ["tasks/prune-old-snapshots.md"]},
+  {"question": "How can I verify that my repository is not corrupted?", "expected": ["tasks/check-repository.md"]},
+  {"question": "What is a snapshot?", "expected": ["concepts/repositories-and-snapshots.md"]},
+  {"question": "Why is the second backup faster than the first?", "expected": ["concepts/incremental-backups.md"]},
+  {"question": "What does deduplication mean?", "expected": ["concepts/incremental-backups.md"]},
+  {"question": "How do I back up to Azure Blob Storage?", "expected": []},
+  {"question": "How do I schedule automatic backups with cron?", "expected": []},
+  {"question": "How do I mount a repository as a filesystem?", "expected": []},
+  {"question": "How do I change the repository password?", "expected": []}
+]

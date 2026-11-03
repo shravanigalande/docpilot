@@ -1,0 +1,6 @@
+__pycache__/
+*.egg-info/
+site/
+.docpilot/
+.pytest_cache/
+.venv/

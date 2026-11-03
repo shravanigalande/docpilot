@@ -1,0 +1,12 @@
+# avoid | preferred
+backup repo | repository
+snap shot | snapshot
+utilize | use
+leverage | use
+in order to | to
+click on | click
+e.g. | for example
+i.e. | that is
+allows you to | lets you
+folder | directory
+pw | password

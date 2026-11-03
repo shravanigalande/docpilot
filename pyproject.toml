@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docpilot"
+version = "0.1.0"
+description = "Docs-as-code and GenAI toolkit: linter, link checker, release notes, docs chatbot and accuracy gate."
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.scripts]
+docpilot = "docpilot.cli:main"
+
+[tool.setuptools]
+packages = ["docpilot"]
+
+[tool.setuptools.package-data]
+docpilot = ["known_commands.json"]

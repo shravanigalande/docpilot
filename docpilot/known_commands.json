@@ -1,0 +1,27 @@
+{
+  "_note": "Offline fallback list. 'docpilot verify --live' checks against the installed restic binary instead. Review this list against 'restic help' for your version.",
+  "global_flags": ["-r", "--repo", "-p", "--password-file", "--password-command", "-v", "--verbose", "-q", "--quiet", "--json", "--no-lock", "--cache-dir", "--no-cache", "--repository-file", "-o", "--option", "--limit-upload", "--limit-download", "--cacert", "--tls-client-cert", "--insecure-tls", "--key-hint", "--retry-lock", "--compression", "--pack-size", "--cleanup-cache", "--no-extra-verify", "-h", "--help"],
+  "subcommands": {
+    "init": ["--repository-version", "--copy-chunker-params", "--from-repo"],
+    "backup": ["-e", "--exclude", "--iexclude", "--exclude-file", "--iexclude-file", "--exclude-caches", "--exclude-if-present", "--exclude-larger-than", "-x", "--one-file-system", "--tag", "-H", "--host", "--files-from", "--files-from-verbatim", "--files-from-raw", "-n", "--dry-run", "-f", "--force", "--parent", "--stdin", "--stdin-filename", "--with-atime", "--ignore-inode", "--read-concurrency", "--skip-if-unchanged", "--time"],
+    "snapshots": ["-H", "--host", "--tag", "--path", "-g", "--group-by", "--latest", "-c", "--compact"],
+    "restore": ["-t", "--target", "-i", "--include", "-e", "--exclude", "--iinclude", "--iexclude", "--include-file", "--exclude-file", "-H", "--host", "--tag", "--path", "--verify", "--sparse", "--delete", "-n", "--dry-run", "--overwrite"],
+    "forget": ["-l", "--keep-last", "--keep-hourly", "-d", "--keep-daily", "-w", "--keep-weekly", "-m", "--keep-monthly", "-y", "--keep-yearly", "--keep-within", "--keep-tag", "--prune", "-n", "--dry-run", "-g", "--group-by", "-H", "--host", "--tag", "--path", "-c", "--compact", "--unsafe-allow-remove-all", "--max-unused", "--max-repack-size", "--repack-cacheable-only"],
+    "prune": ["--max-unused", "--max-repack-size", "-n", "--dry-run", "--repack-cacheable-only", "--repack-small", "--repack-uncompressed"],
+    "check": ["--read-data", "--read-data-subset", "--with-cache", "--check-unused"],
+    "ls": ["-l", "--long", "--recursive", "--human-readable", "-H", "--host", "--tag", "--path", "--ncdu"],
+    "stats": ["--mode", "-H", "--host", "--tag", "--path"],
+    "diff": ["--metadata"],
+    "find": ["-H", "--host", "--tag", "--path", "-i", "--ignore-case", "-l", "--long", "-N", "--newest", "-O", "--oldest", "-s", "--snapshot", "--blob", "--tree", "--pack", "--show-pack-id"],
+    "mount": ["--allow-other", "--no-default-permissions", "--owner-root", "-H", "--host", "--tag", "--path", "--path-template", "--time-template"],
+    "unlock": ["--remove-all"],
+    "key": [],
+    "copy": ["--from-repo", "--from-password-file", "--from-password-command", "-H", "--host", "--tag", "--path"],
+    "tag": ["--set", "--add", "--remove", "-H", "--host", "--tag", "--path"],
+    "cat": [], "dump": ["-a", "--archive", "-H", "--host", "--tag", "--path"],
+    "list": [], "cache": ["--cleanup", "--max-age", "--no-size"],
+    "version": [], "self-update": ["--output"], "help": [], "generate": [], "migrate": ["-f", "--force"],
+    "rewrite": ["--exclude", "-e", "--iexclude", "--exclude-file", "--iexclude-file", "--forget", "-n", "--dry-run", "-H", "--host", "--tag", "--path"],
+    "repair": [], "recover": []
+  }
+}

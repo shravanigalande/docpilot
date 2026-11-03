@@ -1,0 +1,20 @@
+site_name: DocPilot restic docs
+site_description: Sample documentation for restic, built with a docs-as-code workflow.
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Concepts:
+      - Repositories and snapshots: concepts/repositories-and-snapshots.md
+      - How incremental backups work: concepts/incremental-backups.md
+  - Tasks:
+      - Install restic: tasks/install-restic.md
+      - Create a repository: tasks/create-repository.md
+      - Back up files: tasks/back-up-files.md
+      - Restore a snapshot: tasks/restore-snapshot.md
+      - Check a repository: tasks/check-repository.md
+      - Remove old snapshots: tasks/prune-old-snapshots.md
+  - Reference:
+      - Command reference: reference/restic-commands.md
+      - Style guide: style-guide.md
+      - Decision log: decisions.md
