@@ -3,7 +3,7 @@ title: Create a repository
 type: task
 tags: [restic, repository, init]
 last_reviewed: 2026-11-04
-tested_version: UNTESTED
+tested_version: 0.19.1
 ---
 # Create a repository
 
@@ -24,7 +24,7 @@ Create an encrypted repository in a local directory.
 
 2. Enter a password when restic prompts you, and enter it again to confirm.
 
-    Restic prints a message that it created a repository at the path you chose.
+    Restic prints `created restic repository`, followed by a repository ID and the path you chose. It also warns that losing your password means losing your data.
 
 3. List the repository directory to confirm that restic created its files:
 
@@ -32,7 +32,7 @@ Create an encrypted repository in a local directory.
     ls /tmp/restic-demo-repo
     ```
 
-    The directory contains a `config` file and several subdirectories, including `data` and `snapshots`.
+    The directory contains a `config` file and the subdirectories `data`, `index`, `keys`, `locks` and `snapshots`.
 
 ## Next steps
 
