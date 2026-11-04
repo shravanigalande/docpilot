@@ -15,7 +15,7 @@ The tools use only the Python standard library, so there is nothing to install t
 ## Quick start
 
 ```bash
-git clone <your-repo-url> && cd docpilot
+git clone https://github.com/shravanigalande/docpilot.git && cd docpilot
 pip install -e .            # optional: gives you the `docpilot` command
 python -m docpilot lint docs
 python -m docpilot links docs
