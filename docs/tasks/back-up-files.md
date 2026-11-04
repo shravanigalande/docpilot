@@ -3,7 +3,7 @@ title: Back up files
 type: task
 tags: [restic, backup, snapshot]
 last_reviewed: 2026-11-04
-tested_version: UNTESTED
+tested_version: 0.19.1
 ---
 # Back up files
 
@@ -30,7 +30,7 @@ Create a snapshot of a directory in an existing repository.
 
 3. Enter the repository password when prompted.
 
-    Restic prints a line that begins with `snapshot` followed by the new snapshot ID.
+    Restic prints a summary of new and changed files, then `snapshot` followed by the new snapshot ID and the word `saved`.
 
 4. List the snapshots to confirm the backup:
 
@@ -38,7 +38,7 @@ Create a snapshot of a directory in an existing repository.
     restic snapshots --repo /tmp/restic-demo-repo
     ```
 
-    The list shows one snapshot with the ID, time, host name and path.
+    The table has the columns ID, Time, Host, Tags, Paths and Size, and lists one snapshot.
 
 ## Exclude files from a backup
 
