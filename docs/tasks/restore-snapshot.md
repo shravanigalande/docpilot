@@ -3,7 +3,7 @@ title: Restore a snapshot
 type: task
 tags: [restic, restore, snapshot]
 last_reviewed: 2026-11-04
-tested_version: UNTESTED
+tested_version: 0.19.1
 ---
 # Restore a snapshot
 
