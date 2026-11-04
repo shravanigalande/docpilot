@@ -3,7 +3,7 @@ title: Remove old snapshots
 type: task
 tags: [restic, forget, prune, retention]
 last_reviewed: 2026-11-04
-tested_version: UNTESTED
+tested_version: 0.19.1
 ---
 # Remove old snapshots
 
@@ -24,7 +24,7 @@ Keep only the most recent snapshots and free the storage that older snapshots us
 
 2. Review the list of snapshots that restic would keep and remove.
 
-3. Run the command again without `--dry-run`, and add `--prune` to free the storage:
+3. Run the command again without `--dry-run`, and add `--prune` to free the storage. Restic reports how many snapshots it removed, and the output ends with `done`:
 
     ```bash
     restic forget --keep-last 3 --prune --repo /tmp/restic-demo-repo
